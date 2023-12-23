@@ -1,0 +1,21 @@
+{
+	"name": "Output",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Copied.parquet",
+				"folderPath": "Output",
+				"container": "training"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}

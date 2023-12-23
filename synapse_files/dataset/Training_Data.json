@@ -1,0 +1,42 @@
+{
+	"name": "Training_Data",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Iris.parquet",
+				"folderPath": "Training_Data",
+				"container": "training"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "sepal.length",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "sepal.width",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "petal.length",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "petal.width",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "variety",
+				"type": "UTF8"
+			}
+		]
+	}
+}
